@@ -1,0 +1,363 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project       : Prave Soldiers
+Version       : 1.1
+Last change   : 07/10/2017
+Assigned to   : Ghadeer Alkhathlan
+used for   : Hackathon Arabia 
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background      : #39575A
+Content         : #93988E
+Header h1 to h6 : #277894
+Footer          : #459BAA
+
+a (standard)  : #EBEEEE
+a (hover)     : #C2BAAF
+a (active)    : #dd6031
+a (focus)     : #dd6031
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body copy   : 14px/48px STC_Regular, Open sans;
+Headers     : 14px/48px STC_Regular, Open sans;
+Input, textarea : 14px STC_Regular, Open sans;
+Sidebar heading : 18px STC_Regular, Open sans;
+-------------------------------------------------------------------*/
+
+/* Fonts Style Start Here... */
+/Users/Ghadeer/Desktop/LAHMAh site/fonts/STC 
+@font-face {
+    font-family: 'STC';
+    src: url('../fonts/STC/STC_Regular.ttf') format('ttf'),
+         url('../fonts/STC_Bold') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[1. Body ]
+------------------------------------------------------------------*/
+
+/* Reset Style Start Here... */
+body{
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'STC', serif;
+	color: #4a4a4a;
+	overflow-x: hidden;
+	line-height: 26px;
+	direction:  rtl
+}
+
+/*------------------------------------------------------------------
+[2. Typography ]
+------------------------------------------------------------------*/
+h1 , h2 , h3 , h4 , h5 , h6 , p{
+	margin: 10px 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+h2{
+  font-size: 48px;
+  line-height: 47px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+h3{
+  font-size: 30px;
+  line-height: 47px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+h4{
+  font-size: 26px;
+  line-height: 30px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+h5{
+  font-size: 22px;
+  line-height: 30px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+h6{
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Droid Serif', serif;
+  font-weight: 700;
+}
+
+ul , ol{
+	margin: 0 0 0 5px;
+	padding: 0px;
+}
+
+ul li , ol li{
+	margin: 0 0 0 10px;
+	padding: 0px;
+}
+
+img{
+	max-width: 100%;
+}
+
+a , a:visited , a:focus , a:hover{
+	outline: none;
+	text-decoration: none;
+	color: inherit;
+}
+
+a{
+	color: #dd6031;
+}
+
+.btn-black {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: #E49288;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  padding: 3.5px 10px 0px;
+  text-align: center;
+  min-width: 142px;
+  font-size: 16px;
+  color: #ffffff !important;
+  line-height: 34px;
+  height: 40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border:none;
+}
+
+.btn-black:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #181a1e;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.btn-black:hover, .btn-black:focus, .btn-black:active {
+  color: #ffffff;
+  background: #4a4a4a;
+}
+.btn-black:hover:before, .btn-black:focus:before, .btn-black:active:before {
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+input[type="text"] , input[type="email"], input[type="password"] , textarea{
+  border:1px solid #e3e2e2;
+  height: 40px;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+textarea{
+  height: 135px;
+  resize:none;
+}
+
+::-webkit-input-placeholder {
+   color: #4a4a4a;
+}
+
+:-moz-placeholder {
+   color: #4a4a4a;  
+}
+
+::-moz-placeholder {
+   color: #4a4a4a;  
+}
+
+:-ms-input-placeholder {  
+   color: #4a4a4a;  
+}
+
+.top-arrow{
+  position: fixed;
+  bottom: 50px;
+  background: url('img/up-arrow.png') no-repeat 0 0;
+  width: 30px;
+  height: 30px;
+  right: 30px;
+  display: none;
+  z-index: 9999999;
+}
+
+
+/*------------------------------------------------------------------
+[3. Slider ]
+------------------------------------------------------------------*/
+
+/* Swiper slider css */
+
+.slider-container{
+  float: left;
+  width: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.main-part{
+	float: left;
+	width: 100%;
+  margin: 120px 0 0 0;
+}
+
+/* Revolution slider Change Here... */
+
+.slider-outer{
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+.slider-outer ul , .slider-outer ul li{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.slider-outer .tp-leftarrow ,.slider-outer .tp-rightarrow{
+	display: none !important;
+}
+
+/*------------------------------------------------------------------
+[4. Find  ]
+------------------------------------------------------------------*/
+
+/* Find where you are */
+
+.find-container{
+  float: left;
+  width: 100%;
+  background: #181a1e;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+/*------------------------------------------------------------------
+[5. Preloader ]
+------------------------------------------------------------------*/
+#pre-loader {
+  background: #fff none repeat scroll 0 0;
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 9999;
+}
+#pre-loader .loader-holder:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  margin: 0 0 0 -5px;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 1px;
+}
+#pre-loader .loader-holder {
+  height: 400px;
+  left: 50%;
+  margin: -200px 0 0 -200px;
+  position: absolute;
+  top: 50%;
+  white-space: nowrap;
+  width: 400px;
+}
+#pre-loader .loader-holder .frame {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+}
+#pre-loader img {
+  display: inline-block;
+  margin: 0 0 45px;
+}
+.alert-dismissible label {
+  display: block;
+}
+
+
+.about {
+    background-color: #fff;
+    padding-top: 100px;
+}
